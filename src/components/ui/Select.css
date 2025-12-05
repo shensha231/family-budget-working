@@ -1,0 +1,81 @@
+.select-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.select-label {
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.required {
+  color: var(--error);
+  margin-left: 0.25rem;
+}
+
+.select-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.select-wrapper:focus-within {
+  transform: translateY(-1px);
+}
+
+.select-field {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  padding-right: 2.5rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface-light);
+  color: var(--text-primary);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  font-family: 'JetBrains Mono', monospace;
+  appearance: none;
+  cursor: pointer;
+}
+
+.select-field:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.select-wrapper.error .select-field {
+  border-color: var(--error);
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.select-wrapper.disabled .select-field {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.select-arrow {
+  position: absolute;
+  right: 1rem;
+  color: var(--text-secondary);
+  pointer-events: none;
+  transition: transform 0.3s ease;
+}
+
+.select-field:focus + .select-arrow {
+  transform: rotate(180deg);
+}
+
+.select-error {
+  color: var(--error);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.option-icon {
+  margin-right: 0.5rem;
+}
