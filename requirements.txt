@@ -1,0 +1,23 @@
+# Основные зависимости Flask
+Flask==2.3.3
+Flask-Login==0.6.3
+Flask-WTF==1.1.1
+WTForms==3.0.1
+Flask-Babel==3.1.0
+Flask-Bcrypt==1.0.1
+python-dotenv==1.0.0
+
+# Валидация
+email-validator==2.0.0
+phonenumbers==8.13.19
+
+# Тестирование
+pytest==7.4.0
+pytest-flask==1.2.0
+pytest-cov==4.1.0
+Faker==19.6.0
+
+# Дополнительные утилиты
+bcrypt==4.0.1
+Babel==2.12.1
+Jinja2==3.1.2

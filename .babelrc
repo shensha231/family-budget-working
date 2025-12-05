@@ -1,0 +1,7 @@
+{
+    "locales": ["en", "ru"],
+    "default_locale": "en",
+    "directory": "locales",
+    "compile_filenames": ["*.po"],
+    "encoding": "utf-8"
+}
